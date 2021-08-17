@@ -77,7 +77,9 @@ export const ConnectionProxy = async (
       _rpcRequest: _rpcRequest,
     });
     return connection;
-  } catch {
+  } catch (e) {
+    console.warn("Proxying connection failed", e);
+
     return new Connection(solanaEndpoint, defaultCommitment);
   }
 };
