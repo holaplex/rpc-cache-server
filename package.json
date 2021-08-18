@@ -1,18 +1,18 @@
 {
-  "name": "rpc-cache-server",
-  "version": "0.0.3",
-  "description": "A server to cache results of (expensive) RPC requests made to the Solana JSON RPC API",
+  "name": "holaplex-rpc-cache-server",
+  "version": "0.1.0",
+  "description": "A fork of Monadical's rpc-cache-server designed to support Holaplex",
   "author": "Monadical",
   "license": "APACHE",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/Monadical-SAS/rpc-cache-server.git"
+    "url": "https://github.com/holaplex/rpc-cache-server.git"
   },
   "bugs": {
-    "url": "https://github.com/Monadical-SAS/rpc-cache-server/issues"
+    "url": "https://github.com/holaplex/rpc-cache-server/issues"
   },
-  "homepage": "https://github.com/Monadical-SAS/rpc-cache-server#readme",
+  "homepage": "https://github.com/holaplex/rpc-cache-server#readme",
   "keywords": [
     "rpc",
     "solana",
