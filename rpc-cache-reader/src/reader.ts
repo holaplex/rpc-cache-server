@@ -1,5 +1,6 @@
 import { JSONRPCResponse, JSONRPCServer } from "json-rpc-2.0";
 import express from "express";
+import compression from "compression";
 import bodyParser from "body-parser";
 import cors from "cors";
 import { connection } from "../../rpc-cache-utils/src/connection";
@@ -12,6 +13,9 @@ const server = new JSONRPCServer();
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
+app.use(compression({
+  threshold: 1024,
+}));
 
 for (const name of settings.cacheFunctions.names) {
   switch (name) {
