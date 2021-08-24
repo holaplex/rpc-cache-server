@@ -12,10 +12,10 @@ const server = new JSONRPCServer();
 
 const app = express();
 app.use(bodyParser.json());
-app.use(cors());
 app.use(compression({
   threshold: 1024,
 }));
+app.use(cors());
 
 for (const name of settings.cacheFunctions.names) {
   switch (name) {

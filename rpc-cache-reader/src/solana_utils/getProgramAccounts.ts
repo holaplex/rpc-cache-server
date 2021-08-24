@@ -61,8 +61,7 @@ const filterProgramAccounts = (
         } catch {
           return false;
         }
-        // @ts-ignore
-        console.log("first decoding", end - start);
+
         if (memcmpData.offset > decodedData.length) {
           return false;
         }
